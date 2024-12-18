@@ -1,0 +1,84 @@
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  transition: border-color 0.3s ease;
+  width: 100%; // test
+
+  &:focus {
+    outline: none;
+    border-color: #0366d6;
+  }
+}
+
+.searchButton,
+.clearButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton {
+  background-color: #0366d6;
+  color: white;
+  border-radius: 0 4px 4px 0;
+
+  &:hover {
+    background-color: #0255a3;
+  }
+
+  &:focus {
+    outline: 3px solid rgba(3, 102, 214, 0.5);
+  }
+}
+
+.clearButton {
+  position: absolute;
+  right: calc(100% + 5px);
+  background: none;
+  color: #999;
+}
+
+.searchHistory {
+  margin-bottom: 1rem;
+
+  .historyItem {
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    // background-color: #f0f0f0;
+    background-color: #ebeaea;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+.errorMessage {
+  color: #d72323;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #fff0f0;
+  border-radius: 4px;
+}
