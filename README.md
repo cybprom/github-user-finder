@@ -9,7 +9,7 @@ This is a responsive and accessible frontend application that allows users to se
 - **GitHub User Search**: Fetch details of any GitHub user by entering their username in the search bar.
 - **Responsive Design**: Optimized layout for various screen sizes, ensuring a seamless experience across devices.
 - **Loading States**: Displays a loading indicator while fetching data from the API.
-- **Error Handling**: Shows user-friendly error messages for invalid or non-existent usernames.
+- **Error Handling**: Shows user-friendly error messages for invalid, non-existent usernames or when the API rate limits.
 - **User Profile Details**: Displays the following information for each user:
   - Name
   - Profile avatar
