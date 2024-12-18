@@ -8,18 +8,6 @@ const spaceMono = Space_Mono({
   weight: "400",
 });
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// <body className={`${geistSans.variable} ${geistMono.variable}`}>
-
 export const metadata: Metadata = {
   title: "GitHub User Finder",
   description: "Search and explore GitHub user profiles",
