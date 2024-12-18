@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitHub User Search Application
 
-## Getting Started
+This is a responsive and accessible frontend application that allows users to search for GitHub profiles using the GitHub API. The app fetches user information dynamically and displays it in a structured and user-friendly interface.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **GitHub User Search**: Fetch details of any GitHub user by entering their username in the search bar.
+- **Responsive Design**: Optimized layout for various screen sizes, ensuring a seamless experience across devices.
+- **Loading States**: Displays a loading indicator while fetching data from the API.
+- **Error Handling**: Shows user-friendly error messages for invalid or non-existent usernames.
+- **User Profile Details**: Displays the following information for each user:
+  - Name
+  - Profile avatar
+  - Location
+  - Bio
+  - Number of followers
+  - Link to the user’s GitHub profile
+- **Accessible Interface**: Built following ARIA guidelines with keyboard navigation and screen reader support.
+- **Interactive Feedback**: Visual feedback for interactive elements, including focus and hover states.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Bonus Features
 
-## Learn More
+- **Debounce Functionality**: Reduces excessive API calls by implementing a debounce mechanism for the search input.
+- **Search History**: Saves previously searched usernames and allows quick access to their profiles.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js**: Framework for building the application.
+- **TypeScript**: Provides static typing for maintainable and scalable code.
+- **SCSS (SASS)**: Used for styling, offering flexibility and modularity.
+- **GitHub API**: Fetches data about GitHub users.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Follow these steps to run the project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/github-user-search.git
+   ```
+
+## API Reference
+
+The application uses the GitHub API to fetch user information.
+
+**End Point** `https://api.github.com/users/[username]`
